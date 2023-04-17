@@ -1,0 +1,375 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after
+{
+  box-sizing: inherit;
+}
+
+body
+{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+a
+{
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.header-left img:first-of-type
+{
+  display: none;
+}
+
+header
+{
+  height: 88px;
+  border-bottom: 1px solid #D9FFF5;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding:0 24px 0 16px;
+}
+
+body
+{
+  background-color:#F8F8F8;
+}
+
+header img
+{
+  width: 2px;
+  height: 32px;
+}
+
+header a
+{
+  width: 40px;
+  height: 40px;
+}
+
+.header-left
+{
+  display: flex;
+  width: fit-content;
+  min-width: 172px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header-left *,
+.header-right *
+{
+  margin: auto 0;
+}
+
+.header-left__menu
+{
+  background: url('./img/menu.svg');
+}
+
+.header-left__logo
+{
+  background: url('./img/logo.svg');
+  height: 50.81px;
+  width: 96.55px;
+}
+
+.header-right
+{
+  display: flex;
+  min-width: 116px;
+  justify-content: end;
+  gap: 16px;
+}
+
+.header-right img
+{
+  display: none;
+}
+
+.header-right__call
+{
+  display: none;
+  background: url('./img/call.svg');
+}
+
+.header-right__chat
+{
+  display: none;
+  background: url('./img/chat.svg');
+}
+
+.header-right__profile
+{
+  display: none;
+  background: url('./img/profile.svg');
+}
+
+.header-right__repair
+{
+  background: url('./img/repair.svg');
+}
+
+.header-right__checkstatus
+{
+  background: url('./img/checkstatus.svg');
+}
+
+
+.main__h1
+{
+  margin: 24px 16px 0 16px;
+  line-height: 40px;
+}
+
+.h1
+{
+  display: inline-block;
+  font-family: 'TT Lakes';
+  font-size: 28px;
+  letter-spacing: -1.3px;
+}
+
+.main__h1:before
+{
+  content: '';
+  background: url('./img/highlight.svg');
+  width:4px;
+  height: 40px;
+  position:absolute;
+  left:0px;
+}
+
+
+.main-buttons
+{
+  display: none;
+  width:365px;
+  height: 40px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap:32px;
+  margin-right: 32px;
+
+}
+
+
+.main-buttons__link
+{
+  display: flex;
+  gap: 8px;
+  width: 170px;
+  align-items: center;
+  flex-shrink: 0;
+  font-family: TT Lakes Regular;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+}
+
+.nav
+{
+  display: flex;
+  flex-wrap: nowrap;
+  gap:16px;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.main__nav
+{
+  margin:24px 0px;
+}
+
+.nav__link
+{
+  flex-shrink: 0;
+  font-family: 'TT Lakes Regular';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #7E7E82;
+  padding: 8px 9px;
+}
+
+.nav__link:hover
+{
+  border: 2px solid #B8FFEC;
+  border-radius: 6px;
+ text-align: center;
+ justify-self: center;
+  background-color: white;
+  width: auto;
+  height: 40px;
+  padding: 6px 7px;
+}
+
+.content
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+  
+.content__txt 
+{
+  min-width: 288px;
+  max-width: 490px;
+  margin: 0 16px;
+
+}
+
+.txt 
+{
+  height: 90px;
+  overflow: hidden;
+  margin: 0 0 16px 0;
+  color: #1B1C21;
+  font-family: 'TT Lakes Regular';
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.20px;
+  text-align: left;
+}
+
+.read-more 
+{
+  margin: 0 0 16px 9px;
+  color: #1B1C21;
+}
+
+.read-more__icon{
+margin-right: 16px;
+}
+
+.read-more__txt{
+  font-family: 'TT Lakes Regular';
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  }
+
+.cps-logo 
+{
+ 
+}
+
+@media (min-width: 768px) and (max-width: 1119px) 
+{
+  .header-left img:first-of-type
+  {
+    display: unset;
+  }
+
+  .header-left img:last-of-type
+  {
+    display: none;
+  }
+
+  .header-right__call,
+  .header-right__chat,
+  .header-right__profile,
+  .header-right img
+  {
+    display: unset;
+  }
+
+  header
+  {
+    padding-left: 24px;
+  }
+
+  .header-left
+  {
+    min-width: 178px;
+  }
+
+  .header-right img
+  {
+    margin: auto 4px;
+  }
+  .content__txt {
+    width: 312px;
+    margin-left: 24px;
+  }
+
+.txt {
+  height: 160px;
+  }
+
+  .cps-logo {
+    width: 360px;
+    border-radius: 6px;
+    margin-right: 25px;
+  }
+}
+
+@media (min-width:1120px) 
+{
+  header
+  {
+    display: none;
+  }
+
+  .main__h1 
+  {
+    margin-left: 32px;
+    margin-top: 42px;
+  }
+
+  .content__txt
+  {
+    margin:0;
+  }
+  .txt 
+  {
+    margin-left: 34px;
+  }
+
+  .read-more {
+    margin-left: 40px;
+   }
+
+  .nav 
+  {
+    margin-left: 16px;
+    flex-wrap: wrap;
+  }
+
+  
+.main-buttons 
+{
+  display: flex;
+  float: right;
+  margin-top: 42px;
+}
+
+.cps-logo {
+  width: 531px;
+  border-radius: 6px;
+  margin-right: 25px;
+}
+
+.txt {
+  height: 160px;
+  }
+
+}
+
+@font-face 
+{
+  font-family: 'TT Lakes';
+  src:url('./fonts/TTLakes-Bold.ttf')
+}
+
+@font-face 
+{
+  font-family: 'TT Lakes Regular';
+  src:url('./fonts/TTLakes-Regular.ttf')
+}
