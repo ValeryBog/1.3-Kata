@@ -128,15 +128,10 @@ header a {
 
 .main-buttons {
   display: none;
-  width:365px;
+  width:400px;
   height: 40px;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  gap:32px;
   margin-right: 32px;
-
 }
-
 
 .main-buttons__link {
   display: flex;
@@ -188,7 +183,7 @@ header a {
 .content {
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-between;
+  /* justify-content:space-between; */
   }
   
 .content__txt {
@@ -276,14 +271,12 @@ margin-right: 16px;
   letter-spacing: 0.20px;
   }
 
-  .cps-logo {
-    /* width: 360px; */
-    border-radius: 6px;
-    margin-right: 40px;
-    flex: 0 0 45%;
-    max-width: 45%;
-    order: 2;
-
+ .cps-logo {
+  /* width: 360px; */
+  border-radius: 6px;
+  flex: 0 0 48%;
+  max-width: 48%;
+  order: 2;
   }
 }
 
@@ -298,7 +291,8 @@ margin-right: 16px;
   }
 
   .content__txt {
-    margin:0;
+    margin: 0;
+    margin-right: 36px;
     /* flex: 0 0 47%; */
     max-width: 47%;
   }
@@ -317,15 +311,18 @@ margin-right: 16px;
 .main-buttons {
   display: flex;
   float: right;
-  margin-top: 42px;
-}
+   margin-top: 42px;
+   gap: 32px;
+  }
+
+
 
 .cps-logo {
   /* width: 531px; */
   border-radius: 6px;
-  margin-right: 25px;
-  flex: 0 0 48%;
-  max-width: 48%;
+  /* margin-right: 25px; */
+  flex: 0 0 45%;
+  max-width: 45%;
   order: 2;
 
 }
